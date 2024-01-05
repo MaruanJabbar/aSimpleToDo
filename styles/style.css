@@ -1,0 +1,145 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--color-background);
+}
+
+header {
+  background: var(--color-white);
+}
+
+.headerFlexBox {
+  color: #3b5bdb;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputFlexBox{
+    position: relative;
+    display: inline-block;
+}
+
+
+.header__input--search {
+  padding: 5px;
+}
+
+.header__input--search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+  }
+
+.input__box {
+  background: #ebebeb;
+  color: #999;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.searchIcon{
+    position: absolute;
+    top: 50%;
+    left: 85%; /* Ajuste o valor conforme necessário para posicionar corretamente */
+    transform: translateY(-50%);
+    width: 10%;
+    cursor: pointer;
+}
+
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 8px;
+  background: var(--color-white);
+}
+
+
+
+.form__input--text,
+.form__input--priority {
+  background-color: #ebebeb;
+  border: none;
+  padding: 10px 15px;
+  width: 60%;
+}
+
+.form__input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__input--priority {
+  border-radius: 5px;
+  width: 30%;
+}
+
+.form__button--add-task {
+  background-color: #3b5bdb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.tasks__container {
+  margin-top: 20px;
+  padding: 20px;
+  height: auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tasks__container h2 {
+  font-weight: 550;
+}
+
+.task__item {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: #f1f3f5;
+}
+
+.task-info__container {
+  align-items: center;
+  display: flex;
+}
+
+.task-type {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.span-urgent {
+  background-color: var(--color-urgent-span);
+}
+
+.span-important {
+  background-color: var(--color-important-span);
+}
+
+.span-normal {
+  background-color: var(--color-normal-span);
+}
+
+.task__button--remove-task {
+  background-image: url("../assets/trash-icon.svg");
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+}
